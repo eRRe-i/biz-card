@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+#root {
+    display:flex;
+    justify-content: center;
+    background-color: #23252C;
+    font-family: Inter, sans-serif;
+}
+
+.app {
+    background-color: #1A1B21;
+    width: 315px;
+    margin: 40px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.info {
+    
+    background-color: #1A1B21;
+    display:flex;
+    min-width: 315px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.info--img {
+    width: 315px;
+    height: 315px;
+    object-fit: cover;
+}
+
+.info--title {
+    color: #F5F5F5;
+    margin-bottom: 2px;
+    
+}
+
+.info--job-info {
+    color: #F3BF99;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.info--email {
+    color: #F5F5F5;
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.info--buttons {
+    color: #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 15px;
+    width: 86%;
+    
+}
+
+.info--buttons-email {
+    background-color: white;
+    display: flex;
+    width: 45%;
+    padding: 0.5rem 0;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    cursor:pointer;
+    
+}
+
+.info--buttons-email > ion-icon, .info--buttons-email > p {
+    color: #1E1F26;
+    padding: 0 3px;
+}
+
+.info--buttons-linkedin {
+    background-color: #5093E2;
+    display: flex;
+    padding: 0.5rem 0;
+    width: 45%;
+    border-radius: 6px;
+    margin-left: 5px;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    cursor:pointer;
+}
+
+.info--buttons-linkedin > ion-icon, .info--buttons-linkedin > p {
+    color: white;
+    padding: 0 3px;
+}
+
+.about {
+    
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 25px;
+    
+    
+}
+
+.about--heading {
+    color: white; 
+}
+
+
+.about--text {
+    color: #DCDCDC;
+    margin-top: 8px;
+    font-size: 12px;
+    
+}
+
+.interests {
+    
+    margin-left: 7%;
+    margin-right: 5%;
+    margin-top: 25px;
+    padding-bottom: 40px;
+}
+
+.interests--heading {
+    color: white; 
+}
+
+
+.interests--text {
+    color: white;
+    margin-top: 8px;
+    font-size: 12px
+}
+
+.footer {
+    background-color: #161619;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer > .container {
+    background-color: #918E9B;
+    font-size: 2rem;
+    border-radius: 5px;
+    padding: 0;
+    margin: 12px;
+    display: flex;
+    border:none;
+    cursor: pointer;
+    
+}
+
+.footer > .container > ion-icon {
+    color: #161619;
+}

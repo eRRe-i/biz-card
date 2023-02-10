@@ -1,12 +1,12 @@
 import React from "react"
-import "./../css/style.css"
+
 
 export default function Info() {
     return (
             <div className="info">
                 <img className="info--img" alt="person logo" src="./lohn_doe.jpg"/>
                 <h1 className="info--title">John Doe</h1>
-                <h2 className="info--job-info">Frontend Developer</h2>
+                <h2 className="info--job-info">Smug know-it-all</h2>
                 <p className="info--email">johndoe.website</p>
                 <div className="info--buttons">
                     <button className="info--buttons-email">

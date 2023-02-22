@@ -1,39 +1,44 @@
-import About from "./About"
-import Footer from "./Footer"
-import Info from "./Info"
-import Interests from "./Interests"
-import { useEffect, useState } from "react"
 import "./../css/style.css"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Home from "../pages/Home"
+import ProfileForm from "../pages/ProfileForm"
+import ProfileId from "../pages/ProfileId"
 
-function App(){
+function App() {
 
-  const [backendData, setBackendData] = useState([{}])
-
-  useEffect(() => {
-    fetch("/api")
-    .then( response => response.json())
-    .then(data => {setBackendData(data)}) 
-  }, [])
-
-  // try {
-  //   console.log(backendData.users)
-  // } catch(e) {
-  //   console.log("oops")
-  // }
-  
   return (
-      <div className="app">
-          <Info />
-          <About />
-          <Interests />
-          <Footer />
-          {(typeof backendData.users === 'undefined') ? (
-            <h1 style={{color:"white"}}>Oops</h1>
-          ) : (
-            <h1 style={{color:"white"}}>{backendData.users}</h1>
-          ) }
-      </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}>
+          <Route path="new-profile" element={<ProfileForm />} />
+          <Route identifier element={<ProfileId />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
 export default App;
+
+
+
+
+// const [backendData, setBackendData] = useState([{}])
+
+// useEffect(() => {
+//   fetch("/api")
+//     .then(response => response.json())
+//     .then(data => { setBackendData(data) })
+// }, [])
+
+// // try {
+// //   console.log(backendData.users)
+// // } catch(e) {
+// //   console.log("oops")
+// // }
+
+{/* {(typeof backendData.users === 'undefined') ? (
+        <h1 style={{ color: "white" }}>Oops</h1>
+      ) : (
+        <h1 style={{ color: "white" }}>{backendData.users}</h1>
+      )} */}

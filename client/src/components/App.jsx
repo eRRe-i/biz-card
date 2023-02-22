@@ -36,9 +36,3 @@ export default App;
 // // } catch(e) {
 // //   console.log("oops")
 // // }
-
-{/* {(typeof backendData.users === 'undefined') ? (
-        <h1 style={{ color: "white" }}>Oops</h1>
-      ) : (
-        <h1 style={{ color: "white" }}>{backendData.users}</h1>
-      )} */}

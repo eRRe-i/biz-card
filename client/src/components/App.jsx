@@ -1,7 +1,7 @@
 import "./../css/style.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "../pages/Home"
-import ProfileForm from "../pages/ProfileForm"
+import CreateProfile from "../pages/CreateProfile"
 import ProfileId from "../pages/ProfileId"
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}>
-          <Route path="new-profile" element={<ProfileForm />} />
+          <Route path="/create" element={<CreateProfile />} />
           <Route identifier element={<ProfileId />} />
         </Route>
       </Routes>

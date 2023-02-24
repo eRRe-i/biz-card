@@ -5,7 +5,7 @@ import Footer from "./Footer"
 
 export default function Profile() {
     return (
-        <div className="app">
+        <div className="profile">
             <Info />
             <About />
             <Interests />

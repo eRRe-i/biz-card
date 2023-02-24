@@ -1,18 +1,15 @@
-import "./../css/style.css"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Home from "../pages/Home"
-import CreateProfile from "../pages/CreateProfile"
-import ProfileId from "../pages/ProfileId"
+import "./css/style.css"
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import Home from "./pages/Home"
+import CreateProfile from "./pages/CreateProfile"
 
 function App() {
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />}>
-          <Route path="/create" element={<CreateProfile />} />
-          <Route identifier element={<ProfileId />} />
-        </Route>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/create" element={<CreateProfile />} />
       </Routes>
     </BrowserRouter>
   )

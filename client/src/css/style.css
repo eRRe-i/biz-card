@@ -23,10 +23,9 @@
     gap: 10px
 }
 
-.app {
+.profile {
     background-color: #1A1B21;
     width: 315px;
-    margin: 30px auto;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -175,4 +174,27 @@
 
 .footer>.container>ion-icon {
     color: #161619;
+}
+
+
+.form-container {
+    border: 2px solid #DCDCDC;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.create-profile {
+    width: 100%;
+}
+
+.create-profile--main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
